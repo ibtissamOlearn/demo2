@@ -1,8 +1,23 @@
-import {app, BrowserWindow, screen} from 'electron';
+import {app, BrowserWindow, screen, dialog} from 'electron';
+import {autoUpdater} from "electron-updater";
 import * as path from 'path';
 import * as fs from 'fs';
 
 let win: BrowserWindow = null;
+autoUpdater.setFeedURL({
+  provider: 'github',
+  owner: 'ibtissamOlearn',
+  repo: 'demo2'
+});
+Object.defineProperty(app, 'isPackaged', {
+  get() {
+    return true;
+  }
+});
+
+autoUpdater.autoDownload = false ;
+autoUpdater.autoInstallOnAppQuit = true;
+
 const args = process.argv.slice(1),
   serve = args.some(val => val === '--serve');
 
@@ -60,9 +75,37 @@ try {
   // initialization and is ready to create browser windows.
   // Some APIs can only be used after this event occurs.
   // Added 400 ms to fix the black background issue while using transparent window. More detais at https://github.com/electron/electron/issues/15947
-  app.on('ready', () =>
-    setTimeout(createWindow, 400)
+  app.on('ready', () => {
+        setTimeout(createWindow, 400),
+        autoUpdater.checkForUpdatesAndNotify()
+    }
+
+
   );
+
+  autoUpdater.on('update-available', function(info) {
+    const updateMessage = `A new version (${info.version}) of the app is available. Do you want to download and install it now?`;
+    const buttons = ['Download', 'Later'];
+    const options = { type: 'question', buttons: buttons, defaultId: 0, title: 'Update Available', message: updateMessage };
+
+    dialog.showMessageBox(win, options).then(function({ response }) {
+      if (response === 0) {
+        autoUpdater.downloadUpdate();
+      }
+    });
+  });
+
+  autoUpdater.on('update-downloaded', function(info) {
+    const updateMessage = `A new version (${info.version}) of the app has been downloaded. Do you want to restart the app now to install the update?`;
+    const buttons = ['Restart', 'Later'];
+    const options = { type: 'question', buttons: buttons, defaultId: 0, title: 'Update Downloaded', message: updateMessage };
+
+    dialog.showMessageBox(win, options).then(function({ response }) {
+      if (response === 0) {
+        autoUpdater.quitAndInstall();
+      }
+    });
+  });
 
   // Quit when all windows are closed.
   app.on('window-all-closed', () => {
