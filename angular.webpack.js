@@ -24,8 +24,9 @@ module.exports = (config, options) => {
     config.plugins = [
         ...config.plugins,
         new NodePolyfillPlugin({
-			  excludeAliases: ["console"]
-		})
+			    excludeAliases: ["console"]
+		    }),
+
     ];
 
     // https://github.com/ryanclark/karma-webpack/issues/497

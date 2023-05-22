@@ -3,5 +3,15 @@
     {{ 'PAGES.HOME.TITLE' | translate }}
   </h1>
 
-  <a routerLink="/detail">{{ 'home page changed' | translate }}</a>
+  <a routerLink="/detail">{{ 'Test hot reload' | translate }}</a>
+  <!--<a (click)="logMessage()">{{ 'test logs renderer angular-electron' | translate }}</a>-->
+
+
+  <a (click)="logMessagee()">{{ 'Test logs' | translate }}</a>
+  <a (click)="connectToSftpServer()">{{ 'Connect to FTP' | translate }}</a>
+  <a (click)="listFiles()">{{ 'List files from FTP ' | translate }}</a>
+
+  <button (click)="generateLog()">{{ 'Generate Log by angular' | translate }}</button>
+  <button (click)="downloadLogs()">{{ 'Download Logs from angular' | translate }}</button>
+
 </div>

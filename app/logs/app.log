@@ -1,0 +1,421 @@
+13:19:06 info Express server started on port 3000
+13:19:07 info app started on port 4200
+13:19:09 info update-available
+13:24:42 info Express server started on port 3000
+13:24:43 info app started on port 4200
+13:24:44 info update-available
+13:26:04 info Express server started on port 3001 22
+13:26:05 info app started on port 4200
+13:26:07 info update-available
+13:29:40 info Express server started on port 3001 22
+13:29:41 info app started on port 4200
+13:29:43 info update-available
+13:30:50 info Express server started on port 3001 22
+13:30:51 info app started on port 4200
+13:30:52 info update-available
+13:31:51 info test from node api
+13:32:06 info Hello, logging from Angular!
+13:32:06 error Http failure during parsing for http://localhost:3001/api/logger
+13:37:51 info Express server started on port 3001 main side
+13:37:52 info app started on port 4200
+13:37:54 info update-available
+13:38:05 info Hello, logging from Angular!
+13:38:05 error Http failure during parsing for http://localhost:3001/api/logger
+13:42:45 info Hello, logging from Angular!
+13:42:45 error Http failure during parsing for http://localhost:3001/api/logger
+[2023-05-20 13:43:26.300] [info]  Express server started on port 3001 main side
+[2023-05-20 13:43:27.147] [info]  app started on port 4200
+[2023-05-20 13:43:28.738] [info]  update-available
+13:43:33 info Hello, logging from Angular!
+13:43:33 error Http failure during parsing for http://localhost:3001/api/logger
+[2023-05-20 13:45:51.932] [info]  Express server started on port 3001 main side
+[2023-05-20 13:45:52.727] [info]  app started on port 4200 log
+[2023-05-20 13:45:54.359] [info]  update-available
+[2023-05-20 13:49:39.852] [info]  app closed
+[2023-05-20 13:50:20.031] [info]  Express server started on port 3001 from the api side
+[2023-05-20 13:50:20.046] [info]  test from node api
+[2023-05-20 16:39:19.964] [info]  Express server started on port 3001 from the api side
+[2023-05-20 16:39:20.991] [info]  looking for update
+[2023-05-20 16:39:21.104] [info]  Express server started on port 3001 main side
+[2023-05-20 16:39:27.438] [info]  app started on port 4200 log
+[2023-05-20 16:39:29.121] [info]  update-available
+[2023-05-20 16:39:37.303] [error] {
+  headers: { normalizedNames: {}, lazyUpdate: null, headers: {} },
+  status: 0,
+  statusText: 'Unknown Error',
+  url: 'http://localhost:3000/connect',
+  ok: false,
+  name: 'HttpErrorResponse',
+  message: 'Http failure response for http://localhost:3000/connect: 0 Unknown Error',
+  error: { isTrusted: true }
+}
+[2023-05-20 16:39:37.473] [error] {
+  headers: { normalizedNames: {}, lazyUpdate: null, headers: {} },
+  status: 0,
+  statusText: 'Unknown Error',
+  url: 'http://localhost:3000/connect',
+  ok: false,
+  name: 'HttpErrorResponse',
+  message: 'Http failure response for http://localhost:3000/connect: 0 Unknown Error',
+  error: { isTrusted: true }
+}
+[2023-05-20 16:44:13.159] [info]  looking for update
+[2023-05-20 16:44:13.180] [info]  Express server started on port 3001 main side
+[2023-05-20 16:44:14.236] [info]  app started on port 4200 log
+[2023-05-20 16:44:16.010] [info]  update-available
+[2023-05-20 16:40:12.677] [error] {
+  headers: { normalizedNames: {}, lazyUpdate: null, headers: {} },
+  status: 0,
+  statusText: 'Unknown Error',
+  url: 'http://localhost:3000/connect',
+  ok: false,
+  name: 'HttpErrorResponse',
+  message: 'Http failure response for http://localhost:3000/connect: 0 Unknown Error',
+  error: { isTrusted: true }
+}
+[2023-05-20 16:47:25.001] [info]  Express server started on port 3001 from the api side
+[2023-05-20 16:47:57.813] [info]  looking for update
+[2023-05-20 16:47:57.839] [info]  Express server started on port 3001 main side
+[2023-05-20 16:47:58.590] [info]  app started on port 4200 log
+[2023-05-20 16:48:00.405] [info]  update-available
+[2023-05-20 16:48:12.469] [info]  Connected to SFTP server
+[2023-05-20 16:48:12.569] [error] {
+  headers: { normalizedNames: {}, lazyUpdate: null },
+  status: 200,
+  statusText: 'OK',
+  url: 'http://localhost:3001/connect',
+  ok: false,
+  name: 'HttpErrorResponse',
+  message: 'Http failure during parsing for http://localhost:3001/connect',
+  error: { error: {}, text: 'Connected to SFTP server' }
+}
+[2023-05-20 17:30:11.931] [info]  Connected to SFTP server
+[2023-05-20 17:30:11.956] [error] {
+  headers: { normalizedNames: {}, lazyUpdate: null },
+  status: 200,
+  statusText: 'OK',
+  url: 'http://localhost:3001/connect',
+  ok: false,
+  name: 'HttpErrorResponse',
+  message: 'Http failure during parsing for http://localhost:3001/connect',
+  error: { error: {}, text: 'Connected to SFTP server' }
+}
+[2023-05-20 17:33:52.844] [info]  Connected to SFTP server
+[2023-05-20 17:33:52.868] [error] {
+  headers: { normalizedNames: {}, lazyUpdate: null },
+  status: 200,
+  statusText: 'OK',
+  url: 'http://localhost:3001/connect',
+  ok: false,
+  name: 'HttpErrorResponse',
+  message: 'Http failure during parsing for http://localhost:3001/connect',
+  error: { error: {}, text: 'Connected to SFTP server' }
+}
+[2023-05-20 17:37:28.401] [info]  Connected to SFTP server
+[2023-05-20 17:37:28.434] [error] {
+  headers: { normalizedNames: {}, lazyUpdate: null },
+  status: 200,
+  statusText: 'OK',
+  url: 'http://localhost:3001/connect',
+  ok: false,
+  name: 'HttpErrorResponse',
+  message: 'Http failure during parsing for http://localhost:3001/connect',
+  error: { error: {}, text: 'Connected to SFTP server' }
+}
+[2023-05-20 17:37:30.998] [info]  Connected to SFTP server
+[2023-05-20 17:37:31.019] [error] {
+  headers: { normalizedNames: {}, lazyUpdate: null },
+  status: 200,
+  statusText: 'OK',
+  url: 'http://localhost:3001/connect',
+  ok: false,
+  name: 'HttpErrorResponse',
+  message: 'Http failure during parsing for http://localhost:3001/connect',
+  error: { error: {}, text: 'Connected to SFTP server' }
+}
+[2023-05-20 17:37:54.649] [info]  Connected to SFTP server
+[2023-05-20 17:37:54.678] [error] {
+  headers: { normalizedNames: {}, lazyUpdate: null },
+  status: 200,
+  statusText: 'OK',
+  url: 'http://localhost:3001/connect',
+  ok: false,
+  name: 'HttpErrorResponse',
+  message: 'Http failure during parsing for http://localhost:3001/connect',
+  error: { error: {}, text: 'Connected to SFTP server' }
+}
+[2023-05-20 17:38:40.703] [info]  Connected to SFTP server
+[2023-05-20 17:39:39.265] [error] {
+  headers: { normalizedNames: {}, lazyUpdate: null },
+  status: 200,
+  statusText: 'OK',
+  url: 'http://localhost:3001/connect',
+  ok: false,
+  name: 'HttpErrorResponse',
+  message: 'Http failure during parsing for http://localhost:3001/connect',
+  error: { error: {}, text: 'Connected to SFTP server' }
+}
+[2023-05-20 17:40:48.511] [info]  Connected to SFTP server
+[2023-05-20 17:40:48.530] [error] {
+  headers: { normalizedNames: {}, lazyUpdate: null },
+  status: 200,
+  statusText: 'OK',
+  url: 'http://localhost:3001/connect',
+  ok: false,
+  name: 'HttpErrorResponse',
+  message: 'Http failure during parsing for http://localhost:3001/connect',
+  error: { error: {}, text: 'Connected to SFTP server' }
+}
+[2023-05-20 17:40:55.169] [info]  Connected to SFTP server
+[2023-05-20 17:40:55.207] [error] Http failure during parsing for http://localhost:3001/connect
+[2023-05-20 17:41:34.186] [info]  Connected to SFTP server
+[2023-05-20 17:41:34.215] [error] Http failure during parsing for http://localhost:3001/connect
+[2023-05-20 17:42:52.639] [info]  Connected to SFTP server
+[2023-05-20 17:42:52.668] [error] Http failure during parsing for http://localhost:3001/connect
+[2023-05-20 17:43:05.215] [info]  Connected to SFTP server
+[2023-05-20 17:43:05.244] [error] Http failure during parsing for http://localhost:3001/connect
+[2023-05-20 17:51:37.351] [info]  Connected to SFTP server
+[2023-05-20 17:51:37.396] [error] Http failure during parsing for http://localhost:3001/connect
+[2023-05-20 18:05:36.168] [info]  looking for update
+[2023-05-20 18:05:36.189] [info]  Express server started on port 3001 main side
+[2023-05-20 18:05:37.097] [info]  app started on port 4200 log
+[2023-05-20 18:05:39.236] [info]  update-available
+[2023-05-20 18:07:33.872] [info]  Connected to SFTP server
+[2023-05-20 18:07:33.902] [error] Http failure during parsing for http://localhost:3001/connect
+[2023-05-20 18:08:25.408] [info]  Hello, logging from Angular!
+[2023-05-20 18:08:25.432] [error] Http failure during parsing for http://localhost:3001/api/logger
+[2023-05-20 18:09:19.665] [info]  Connected to SFTP server
+[2023-05-20 18:09:19.696] [error] {
+  headers: { normalizedNames: {}, lazyUpdate: null },
+  status: 200,
+  statusText: 'OK',
+  url: 'http://localhost:3001/connect',
+  ok: false,
+  name: 'HttpErrorResponse',
+  message: 'Http failure during parsing for http://localhost:3001/connect',
+  error: { error: {}, text: 'Connected to SFTP server' }
+}
+[2023-05-20 18:10:00.172] [info]  Connected to SFTP server
+[2023-05-20 18:10:00.205] [error] {
+  headers: { normalizedNames: {}, lazyUpdate: null },
+  status: 200,
+  statusText: 'OK',
+  url: 'http://localhost:3001/connect',
+  ok: false,
+  name: 'HttpErrorResponse',
+  message: 'Http failure during parsing for http://localhost:3001/connect',
+  error: { error: {}, text: 'Connected to SFTP server' }
+}
+[2023-05-20 18:23:45.788] [info]  app closed
+[2023-05-20 18:23:45.795] [info]  app closed
+[2023-05-20 18:24:16.893] [info]  looking for update
+[2023-05-20 18:24:16.915] [info]  Express server started on port 3001 main side
+[2023-05-20 18:24:17.789] [info]  app started on port 4200 log
+[2023-05-20 18:24:21.835] [info]  update-available
+[2023-05-20 18:23:24.494] [info]  Connected to SFTP server
+[2023-05-20 18:28:44.525] [info]  Express server started on port 3001 from the api side
+[2023-05-20 18:29:06.096] [info]  Connected to SFTP server from apiservice
+[2023-05-20 18:29:06.216] [info]  connected to ftp server from frontend
+[2023-05-20 18:29:12.823] [info]  Hello, logging from Angular!
+[2023-05-20 18:29:12.845] [error] {
+  headers: { normalizedNames: {}, lazyUpdate: null },
+  status: 200,
+  statusText: 'OK',
+  url: 'http://localhost:3001/api/logger',
+  ok: false,
+  name: 'HttpErrorResponse',
+  message: 'Http failure during parsing for http://localhost:3001/api/logger',
+  error: { error: {}, text: 'OK' }
+}
+[2023-05-20 18:29:20.432] [info]  Connected to SFTP server from apiservice
+[2023-05-20 18:29:20.482] [info]  connected to ftp server from frontend
+[2023-05-20 18:36:17.005] [info]  Hello, logging from Angular!
+[2023-05-20 18:36:17.029] [info]  Message logged successfully
+[2023-05-20 18:36:25.001] [info]  Connected to SFTP server from apiservice
+[2023-05-20 18:36:25.031] [info]  connected to ftp server from frontend
+[2023-05-20 18:40:43.639] [info]  Hello, logging from Angular!
+[2023-05-20 18:40:43.657] [info]  Message logged successfully
+[2023-05-20 18:40:51.681] [info]  Connected to SFTP server from apiservice
+[2023-05-20 18:40:51.701] [info]  connected to ftp server from frontend
+[2023-05-20 18:41:00.167] [info]  Connected to SFTP server from apiservice
+[2023-05-20 18:41:00.805] [error] {
+  headers: { normalizedNames: {}, lazyUpdate: null },
+  status: 500,
+  statusText: 'Internal Server Error',
+  url: 'http://localhost:3001/list',
+  ok: false,
+  name: 'HttpErrorResponse',
+  message: 'Http failure response for http://localhost:3001/list: 500 Internal Server Error',
+  error: 'Error listing files'
+}
+[2023-05-20 18:43:04.824] [info]  Connected to SFTP server from apiservice
+[2023-05-20 18:43:05.140] [error] {
+  headers: { normalizedNames: {}, lazyUpdate: null },
+  status: 500,
+  statusText: 'Internal Server Error',
+  url: 'http://localhost:3001/list',
+  ok: false,
+  name: 'HttpErrorResponse',
+  message: 'Http failure response for http://localhost:3001/list: 500 Internal Server Error',
+  error: 'Error listing files'
+}
+[2023-05-20 19:01:33.923] [info]  Connected to SFTP server from apiservice
+[2023-05-20 19:01:34.347] [error] {
+  headers: { normalizedNames: {}, lazyUpdate: null },
+  status: 500,
+  statusText: 'Internal Server Error',
+  url: 'http://localhost:3001/list',
+  ok: false,
+  name: 'HttpErrorResponse',
+  message: 'Http failure response for http://localhost:3001/list: 500 Internal Server Error',
+  error: 'Error listing files'
+}
+[2023-05-20 19:01:49.627] [info]  Connected to SFTP server from apiservice
+[2023-05-20 19:01:49.642] [info]  connected to ftp server from frontend
+[2023-05-20 19:01:57.310] [info]  Connected to SFTP server from apiservice
+[2023-05-20 19:01:57.714] [error] {
+  headers: { normalizedNames: {}, lazyUpdate: null },
+  status: 500,
+  statusText: 'Internal Server Error',
+  url: 'http://localhost:3001/list',
+  ok: false,
+  name: 'HttpErrorResponse',
+  message: 'Http failure response for http://localhost:3001/list: 500 Internal Server Error',
+  error: 'Error listing files'
+}
+[2023-05-20 19:05:33.159] [info]  Connected to SFTP server from apiservice
+[2023-05-20 19:05:33.419] [error] {
+  headers: { normalizedNames: {}, lazyUpdate: null },
+  status: 500,
+  statusText: 'Internal Server Error',
+  url: 'http://localhost:3001/list',
+  ok: false,
+  name: 'HttpErrorResponse',
+  message: 'Http failure response for http://localhost:3001/list: 500 Internal Server Error',
+  error: 'Error listing files'
+}
+[2023-05-20 19:15:07.386] [info]  Connected to SFTP server from apiservice
+[2023-05-20 19:15:07.650] [error] {
+  headers: { normalizedNames: {}, lazyUpdate: null },
+  status: 500,
+  statusText: 'Internal Server Error',
+  url: 'http://localhost:3001/list',
+  ok: false,
+  name: 'HttpErrorResponse',
+  message: 'Http failure response for http://localhost:3001/list: 500 Internal Server Error',
+  error: 'Error listing files'
+}
+[2023-05-20 19:15:21.960] [info]  Connected to SFTP server from apiservice
+[2023-05-20 19:15:22.266] [error] {
+  headers: { normalizedNames: {}, lazyUpdate: null },
+  status: 500,
+  statusText: 'Internal Server Error',
+  url: 'http://localhost:3001/list',
+  ok: false,
+  name: 'HttpErrorResponse',
+  message: 'Http failure response for http://localhost:3001/list: 500 Internal Server Error',
+  error: 'Error listing files'
+}
+[2023-05-20 19:43:06.715] [info]  Connected to SFTP server from apiservice
+[2023-05-20 19:43:07.123] [error] {
+  headers: { normalizedNames: {}, lazyUpdate: null },
+  status: 500,
+  statusText: 'Internal Server Error',
+  url: 'http://localhost:3001/list',
+  ok: false,
+  name: 'HttpErrorResponse',
+  message: 'Http failure response for http://localhost:3001/list: 500 Internal Server Error',
+  error: 'Error listing files'
+}
+[2023-05-20 19:43:37.517] [info]  Connected to SFTP server from apiservice
+[2023-05-20 19:43:37.778] [error] {
+  headers: { normalizedNames: {}, lazyUpdate: null },
+  status: 500,
+  statusText: 'Internal Server Error',
+  url: 'http://localhost:3001/list',
+  ok: false,
+  name: 'HttpErrorResponse',
+  message: 'Http failure response for http://localhost:3001/list: 500 Internal Server Error',
+  error: 'Error listing files'
+}
+[2023-05-20 19:43:42.736] [info]  Connected to SFTP server from apiservice
+[2023-05-20 19:43:42.996] [error] {
+  headers: { normalizedNames: {}, lazyUpdate: null },
+  status: 500,
+  statusText: 'Internal Server Error',
+  url: 'http://localhost:3001/list',
+  ok: false,
+  name: 'HttpErrorResponse',
+  message: 'Http failure response for http://localhost:3001/list: 500 Internal Server Error',
+  error: 'Error listing files'
+}
+[2023-05-20 19:51:13.072] [error] {
+  headers: { normalizedNames: {}, lazyUpdate: null },
+  status: 404,
+  statusText: 'Not Found',
+  url: 'http://localhost:3001/connectlist',
+  ok: false,
+  name: 'HttpErrorResponse',
+  message: 'Http failure response for http://localhost:3001/connectlist: 404 Not Found',
+  error: '<!DOCTYPE html>\n' +
+    '<html lang="en">\n' +
+    '<head>\n' +
+    '<meta charset="utf-8">\n' +
+    '<title>Error</title>\n' +
+    '</head>\n' +
+    '<body>\n' +
+    '<pre>Cannot GET /connectlist</pre>\n' +
+    '</body>\n' +
+    '</html>\n'
+}
+[2023-05-20 19:54:33.966] [error] {
+  headers: { normalizedNames: {}, lazyUpdate: null },
+  status: 404,
+  statusText: 'Not Found',
+  url: 'http://localhost:3001/connectlist',
+  ok: false,
+  name: 'HttpErrorResponse',
+  message: 'Http failure response for http://localhost:3001/connectlist: 404 Not Found',
+  error: '<!DOCTYPE html>\n' +
+    '<html lang="en">\n' +
+    '<head>\n' +
+    '<meta charset="utf-8">\n' +
+    '<title>Error</title>\n' +
+    '</head>\n' +
+    '<body>\n' +
+    '<pre>Cannot GET /connectlist</pre>\n' +
+    '</body>\n' +
+    '</html>\n'
+}
+[2023-05-20 21:24:47.134] [info]  Connected to SFTP server from apiservice
+[2023-05-20 21:24:47.154] [info]  connected to ftp server from frontend
+[2023-05-20 21:27:49.173] [info]  Connected to SFTP server from apiservice
+[2023-05-20 21:27:49.618] [error] {
+  headers: { normalizedNames: {}, lazyUpdate: null },
+  status: 500,
+  statusText: 'Internal Server Error',
+  url: 'http://localhost:3001/list',
+  ok: false,
+  name: 'HttpErrorResponse',
+  message: 'Http failure response for http://localhost:3001/list: 500 Internal Server Error',
+  error: 'Error listing files'
+}
+[2023-05-22 09:16:05.780] [info]  looking for update
+[2023-05-22 09:16:05.817] [info]  Express server started on port 3001 main side
+[2023-05-22 09:16:08.830] [info]  app started on port 4200 log
+[2023-05-22 09:16:11.383] [info]  update-available
+[2023-05-22 09:18:39.263] [info]  Express server started on port 3001 from the api side
+[2023-05-22 09:19:29.520] [info]  Connected to SFTP server from apiservice
+[2023-05-22 09:19:29.580] [info]  connected to ftp server from frontend
+[2023-05-22 09:19:32.730] [info]  Connected to SFTP server from apiservice
+[2023-05-22 09:19:34.484] [info]  [{"type":"d","name":".sftp","size":37,"modifyTime":1640350214000,"accessTime":1684721297000,"rights":{"user":"rwx","group":"","other":""},"owner":8119,"group":8119,"longname":"drwx------    2 airmessir 8119           37 Dec 24  2021 .sftp"},{"type":"d","name":"NewMessir","size":4096,"modifyTime":1670228187000,"accessTime":1684721297000,"rights":{"user":"rwx","group":"","other":""},"owner":8119,"group":8119,"longname":"drwx------   27 airmessir 8119         4096 Dec  5 08:16 NewMessir"},{"type":"d","name":"OldMessir","size":29,"modifyTime":1506948349000,"accessTime":1684721297000,"rights":{"user":"rwx","group":"","other":""},"owner":8119,"group":8119,"longname":"drwx------    3 airmessir 8119           29 Oct  2  2017 OldMessir"},{"type":"d","name":"temp","size":8192,"modifyTime":1649842086000,"accessTime":1684709899000,"rights":{"user":"rwx","group":"","other":""},"owner":8119,"group":8119,"longname":"drwx------   11 airmessir 8119         8192 Apr 13  2022 temp"},{"type":"-","name":"AIRLOG_2020_01_16_xlbm4982.txt","size":55553,"modifyTime":1580720907000,"accessTime":1638200799000,"rights":{"user":"rw","group":"r","other":"r"},"owner":8119,"group":8119,"longname":"-rw-r--r--    1 airmessir 8119        55553 Feb  3  2020 AIRLOG_2020_01_16_xlbm4982.txt"},{"type":"-","name":"AIRLOG_2020_01_07_xlbm4982.txt","size":21591,"modifyTime":1580720932000,"accessTime":1638200799000,"rights":{"user":"rw","group":"r","other":"r"},"owner":8119,"group":8119,"longname":"-rw-r--r--    1 airmessir 8119        21591 Feb  3  2020 AIRLOG_2020_01_07_xlbm4982.txt"},{"type":"-","name":"nodejs_logs.log-20200108.gz","size":1121194,"modifyTime":1580745527000,"accessTime":1618901807000,"rights":{"user":"rwx","group":"rwx","other":"rx"},"owner":8119,"group":8119,"longname":"-rwxrwxr-x    1 airmessir 8119      1121194 Feb  3  2020 nodejs_logs.log-20200108.gz"},{"type":"d","name":"G12R03C00","size":10,"modifyTime":1584103264000,"accessTime":1684721297000,"rights":{"user":"rwx","group":"","other":""},"owner":8119,"group":8119,"longname":"drwx------    2 airmessir 8119           10 Mar 13  2020 G12R03C00"},{"type":"-","name":"AIRLOG_2019_12_20_xlbm4982.txt","size":8805,"modifyTime":1595429739000,"accessTime":1638200800000,"rights":{"user":"rwx","group":"rwx","other":"rx"},"owner":8119,"group":8119,"longname":"-rwxrwxr-x    1 airmessir 8119         8805 Jul 22  2020 AIRLOG_2019_12_20_xlbm4982.txt"},{"type":"-","name":"export_Aoutdata.sql","size":112753423,"modifyTime":1599034460000,"accessTime":1618901801000,"rights":{"user":"rw","group":"r","other":""},"owner":8119,"group":8119,"longname":"-rw-r-----    1 airmessir 8119     112753423 Sep  2  2020 export_Aoutdata.sql"},{"type":"-","name":"Synapse.jks","size":6808,"modifyTime":1602755396000,"accessTime":1618901800000,"rights":{"user":"rwx","group":"rwx","other":"rx"},"owner":8119,"group":8119,"longname":"-rwxrwxr-x    1 airmessir 8119         6808 Oct 15  2020 Synapse.jks"},{"type":"d","name":"EuroInfo","size":92,"modifyTime":1618228007000,"accessTime":1684721297000,"rights":{"user":"rwx","group":"","other":""},"owner":8119,"group":8119,"longname":"drwx------    6 airmessir 8119           92 Apr 12  2021 EuroInfo"},{"type":"-","name":"messir_script.log","size":30352,"modifyTime":1623066841000,"accessTime":1630469422000,"rights":{"user":"rw","group":"r","other":"r"},"owner":8119,"group":8119,"longname":"-rw-r--r--    1 airmessir 8119        30352 Jun  7  2021 messir_script.log"},{"type":"d","name":"Tests","size":89,"modifyTime":1625134108000,"accessTime":1684709899000,"rights":{"user":"rwx","group":"","other":""},"owner":8119,"group":8119,"longname":"drwx------    2 airmessir 8119           89 Jul  1  2021 Tests"},{"type":"-","name":"dump_MESSIR_CONFIG.sql.gz.enc.20210726190001","size":33200650,"modifyTime":1627802264000,"accessTime":1630469420000,"rights":{"user":"rw","group":"r","other":""},"owner":8119,"group":8119,"longname":"-rw-r-----    1 airmessir 8119     33200650 Aug  1  2021 dump_MESSIR_CONFIG.sql.gz.enc.20210726190001"},{"type":"-","name":"dump_MESSIR_LOGS.sql.gz.enc.20211005130644","size":62990874,"modifyTime":1633432504000,"accessTime":1635968680000,"rights":{"user":"rw","group":"","other":""},"owner":8119,"group":8119,"longname":"-rw-------    1 airmessir 8119     62990874 Oct  5  2021 dump_MESSIR_LOGS.sql.gz.enc.20211005130644"},{"type":"-","name":"dump_MESSIR_LOGS.sql.gz.enc.20210309120002","size":232594906,"modifyTime":1633432525000,"accessTime":1635968667000,"rights":{"user":"rw","group":"r","other":""},"owner":8119,"group":8119,"longname":"-rw-r-----    1 airmessir 8119     232594906 Oct  5  2021 dump_MESSIR_LOGS.sql.gz.enc.20210309120002"},{"type":"d","name":"RIE","size":71,"modifyTime":1653664641000,"accessTime":1684721297000,"rights":{"user":"rwx","group":"","other":""},"owner":8119,"group":8119,"longname":"drwx------    5 airmessir 8119           71 May 27  2022 RIE"},{"type":"d","name":"nodejs","size":184,"modifyTime":1655105558000,"accessTime":1684709899000,"rights":{"user":"rwx","group":"","other":""},"owner":8119,"group":8119,"longname":"drwx------    2 airmessir 8119          184 Jun 13  2022 nodejs"},{"type":"d","name":"synapse(salto)","size":34,"modifyTime":1674723330000,"accessTime":1684709899000,"rights":{"user":"rwx","group":"","other":""},"owner":8119,"group":8119,"longname":"drwx------    2 airmessir 8119           34 Jan 26 08:55 synapse(salto)"},{"type":"d","name":"AIRLOGS","size":136,"modifyTime":1681998298000,"accessTime":1684692864000,"rights":{"user":"rwx","group":"","other":""},"owner":8119,"group":8119,"longname":"drwx------    2 airmessir 8119          136 Apr 20 13:44 AIRLOGS"},{"type":"-","name":"AIRLOG_2023_05_03_BLKG4154.txt","size":7914,"modifyTime":1683794657000,"accessTime":1683795020000,"rights":{"user":"rw","group":"r","other":"r"},"owner":8119,"group":8119,"longname":"-rw-r--r--    1 airmessir 8119         7914 May 11 08:44 AIRLOG_2023_05_03_BLKG4154.txt"},{"type":"-","name":"AIRLOG_2023_05_03_dwfq6895.txt","size":134416,"modifyTime":1683794679000,"accessTime":1683795021000,"rights":{"user":"rw","group":"r","other":"r"},"owner":8119,"group":8119,"longname":"-rw-r--r--    1 airmessir 8119       134416 May 11 08:44 AIRLOG_2023_05_03_dwfq6895.txt"},{"type":"-","name":"wasac.jks","size":1680,"modifyTime":1684162541000,"accessTime":1684162565000,"rights":{"user":"rw","group":"","other":""},"owner":8119,"group":8119,"longname":"-rw-------    1 airmessir 8119         1680 May 15 14:55 wasac.jks"}]
+[2023-05-22 09:34:11.690] [info]  Connected to SFTP server from apiservice
+[2023-05-22 09:34:13.635] [info]  [{"type":"d","name":".sftp","size":37,"modifyTime":1640350214000,"accessTime":1684721297000,"rights":{"user":"rwx","group":"","other":""},"owner":8119,"group":8119,"longname":"drwx------    2 airmessir 8119           37 Dec 24  2021 .sftp"},{"type":"d","name":"NewMessir","size":4096,"modifyTime":1670228187000,"accessTime":1684721297000,"rights":{"user":"rwx","group":"","other":""},"owner":8119,"group":8119,"longname":"drwx------   27 airmessir 8119         4096 Dec  5 08:16 NewMessir"},{"type":"d","name":"OldMessir","size":29,"modifyTime":1506948349000,"accessTime":1684721297000,"rights":{"user":"rwx","group":"","other":""},"owner":8119,"group":8119,"longname":"drwx------    3 airmessir 8119           29 Oct  2  2017 OldMessir"},{"type":"d","name":"temp","size":8192,"modifyTime":1649842086000,"accessTime":1684709899000,"rights":{"user":"rwx","group":"","other":""},"owner":8119,"group":8119,"longname":"drwx------   11 airmessir 8119         8192 Apr 13  2022 temp"},{"type":"-","name":"AIRLOG_2020_01_16_xlbm4982.txt","size":55553,"modifyTime":1580720907000,"accessTime":1638200799000,"rights":{"user":"rw","group":"r","other":"r"},"owner":8119,"group":8119,"longname":"-rw-r--r--    1 airmessir 8119        55553 Feb  3  2020 AIRLOG_2020_01_16_xlbm4982.txt"},{"type":"-","name":"AIRLOG_2020_01_07_xlbm4982.txt","size":21591,"modifyTime":1580720932000,"accessTime":1638200799000,"rights":{"user":"rw","group":"r","other":"r"},"owner":8119,"group":8119,"longname":"-rw-r--r--    1 airmessir 8119        21591 Feb  3  2020 AIRLOG_2020_01_07_xlbm4982.txt"},{"type":"-","name":"nodejs_logs.log-20200108.gz","size":1121194,"modifyTime":1580745527000,"accessTime":1618901807000,"rights":{"user":"rwx","group":"rwx","other":"rx"},"owner":8119,"group":8119,"longname":"-rwxrwxr-x    1 airmessir 8119      1121194 Feb  3  2020 nodejs_logs.log-20200108.gz"},{"type":"d","name":"G12R03C00","size":10,"modifyTime":1584103264000,"accessTime":1684721297000,"rights":{"user":"rwx","group":"","other":""},"owner":8119,"group":8119,"longname":"drwx------    2 airmessir 8119           10 Mar 13  2020 G12R03C00"},{"type":"-","name":"AIRLOG_2019_12_20_xlbm4982.txt","size":8805,"modifyTime":1595429739000,"accessTime":1638200800000,"rights":{"user":"rwx","group":"rwx","other":"rx"},"owner":8119,"group":8119,"longname":"-rwxrwxr-x    1 airmessir 8119         8805 Jul 22  2020 AIRLOG_2019_12_20_xlbm4982.txt"},{"type":"-","name":"export_Aoutdata.sql","size":112753423,"modifyTime":1599034460000,"accessTime":1618901801000,"rights":{"user":"rw","group":"r","other":""},"owner":8119,"group":8119,"longname":"-rw-r-----    1 airmessir 8119     112753423 Sep  2  2020 export_Aoutdata.sql"},{"type":"-","name":"Synapse.jks","size":6808,"modifyTime":1602755396000,"accessTime":1618901800000,"rights":{"user":"rwx","group":"rwx","other":"rx"},"owner":8119,"group":8119,"longname":"-rwxrwxr-x    1 airmessir 8119         6808 Oct 15  2020 Synapse.jks"},{"type":"d","name":"EuroInfo","size":92,"modifyTime":1618228007000,"accessTime":1684721297000,"rights":{"user":"rwx","group":"","other":""},"owner":8119,"group":8119,"longname":"drwx------    6 airmessir 8119           92 Apr 12  2021 EuroInfo"},{"type":"-","name":"messir_script.log","size":30352,"modifyTime":1623066841000,"accessTime":1630469422000,"rights":{"user":"rw","group":"r","other":"r"},"owner":8119,"group":8119,"longname":"-rw-r--r--    1 airmessir 8119        30352 Jun  7  2021 messir_script.log"},{"type":"d","name":"Tests","size":89,"modifyTime":1625134108000,"accessTime":1684709899000,"rights":{"user":"rwx","group":"","other":""},"owner":8119,"group":8119,"longname":"drwx------    2 airmessir 8119           89 Jul  1  2021 Tests"},{"type":"-","name":"dump_MESSIR_CONFIG.sql.gz.enc.20210726190001","size":33200650,"modifyTime":1627802264000,"accessTime":1630469420000,"rights":{"user":"rw","group":"r","other":""},"owner":8119,"group":8119,"longname":"-rw-r-----    1 airmessir 8119     33200650 Aug  1  2021 dump_MESSIR_CONFIG.sql.gz.enc.20210726190001"},{"type":"-","name":"dump_MESSIR_LOGS.sql.gz.enc.20211005130644","size":62990874,"modifyTime":1633432504000,"accessTime":1635968680000,"rights":{"user":"rw","group":"","other":""},"owner":8119,"group":8119,"longname":"-rw-------    1 airmessir 8119     62990874 Oct  5  2021 dump_MESSIR_LOGS.sql.gz.enc.20211005130644"},{"type":"-","name":"dump_MESSIR_LOGS.sql.gz.enc.20210309120002","size":232594906,"modifyTime":1633432525000,"accessTime":1635968667000,"rights":{"user":"rw","group":"r","other":""},"owner":8119,"group":8119,"longname":"-rw-r-----    1 airmessir 8119     232594906 Oct  5  2021 dump_MESSIR_LOGS.sql.gz.enc.20210309120002"},{"type":"d","name":"RIE","size":71,"modifyTime":1653664641000,"accessTime":1684721297000,"rights":{"user":"rwx","group":"","other":""},"owner":8119,"group":8119,"longname":"drwx------    5 airmessir 8119           71 May 27  2022 RIE"},{"type":"d","name":"nodejs","size":184,"modifyTime":1655105558000,"accessTime":1684709899000,"rights":{"user":"rwx","group":"","other":""},"owner":8119,"group":8119,"longname":"drwx------    2 airmessir 8119          184 Jun 13  2022 nodejs"},{"type":"d","name":"synapse(salto)","size":34,"modifyTime":1674723330000,"accessTime":1684709899000,"rights":{"user":"rwx","group":"","other":""},"owner":8119,"group":8119,"longname":"drwx------    2 airmessir 8119           34 Jan 26 08:55 synapse(salto)"},{"type":"d","name":"AIRLOGS","size":136,"modifyTime":1681998298000,"accessTime":1684692864000,"rights":{"user":"rwx","group":"","other":""},"owner":8119,"group":8119,"longname":"drwx------    2 airmessir 8119          136 Apr 20 13:44 AIRLOGS"},{"type":"-","name":"AIRLOG_2023_05_03_BLKG4154.txt","size":7914,"modifyTime":1683794657000,"accessTime":1683795020000,"rights":{"user":"rw","group":"r","other":"r"},"owner":8119,"group":8119,"longname":"-rw-r--r--    1 airmessir 8119         7914 May 11 08:44 AIRLOG_2023_05_03_BLKG4154.txt"},{"type":"-","name":"AIRLOG_2023_05_03_dwfq6895.txt","size":134416,"modifyTime":1683794679000,"accessTime":1683795021000,"rights":{"user":"rw","group":"r","other":"r"},"owner":8119,"group":8119,"longname":"-rw-r--r--    1 airmessir 8119       134416 May 11 08:44 AIRLOG_2023_05_03_dwfq6895.txt"},{"type":"-","name":"wasac.jks","size":1680,"modifyTime":1684162541000,"accessTime":1684162565000,"rights":{"user":"rw","group":"","other":""},"owner":8119,"group":8119,"longname":"-rw-------    1 airmessir 8119         1680 May 15 14:55 wasac.jks"}]
+[2023-05-22 09:34:27.700] [info]  Connected to SFTP server from apiservice
+[2023-05-22 09:34:29.553] [info]  [{"type":"d","name":".sftp","size":37,"modifyTime":1640350214000,"accessTime":1684721297000,"rights":{"user":"rwx","group":"","other":""},"owner":8119,"group":8119,"longname":"drwx------    2 airmessir 8119           37 Dec 24  2021 .sftp"},{"type":"d","name":"NewMessir","size":4096,"modifyTime":1670228187000,"accessTime":1684721297000,"rights":{"user":"rwx","group":"","other":""},"owner":8119,"group":8119,"longname":"drwx------   27 airmessir 8119         4096 Dec  5 08:16 NewMessir"},{"type":"d","name":"OldMessir","size":29,"modifyTime":1506948349000,"accessTime":1684721297000,"rights":{"user":"rwx","group":"","other":""},"owner":8119,"group":8119,"longname":"drwx------    3 airmessir 8119           29 Oct  2  2017 OldMessir"},{"type":"d","name":"temp","size":8192,"modifyTime":1649842086000,"accessTime":1684709899000,"rights":{"user":"rwx","group":"","other":""},"owner":8119,"group":8119,"longname":"drwx------   11 airmessir 8119         8192 Apr 13  2022 temp"},{"type":"-","name":"AIRLOG_2020_01_16_xlbm4982.txt","size":55553,"modifyTime":1580720907000,"accessTime":1638200799000,"rights":{"user":"rw","group":"r","other":"r"},"owner":8119,"group":8119,"longname":"-rw-r--r--    1 airmessir 8119        55553 Feb  3  2020 AIRLOG_2020_01_16_xlbm4982.txt"},{"type":"-","name":"AIRLOG_2020_01_07_xlbm4982.txt","size":21591,"modifyTime":1580720932000,"accessTime":1638200799000,"rights":{"user":"rw","group":"r","other":"r"},"owner":8119,"group":8119,"longname":"-rw-r--r--    1 airmessir 8119        21591 Feb  3  2020 AIRLOG_2020_01_07_xlbm4982.txt"},{"type":"-","name":"nodejs_logs.log-20200108.gz","size":1121194,"modifyTime":1580745527000,"accessTime":1618901807000,"rights":{"user":"rwx","group":"rwx","other":"rx"},"owner":8119,"group":8119,"longname":"-rwxrwxr-x    1 airmessir 8119      1121194 Feb  3  2020 nodejs_logs.log-20200108.gz"},{"type":"d","name":"G12R03C00","size":10,"modifyTime":1584103264000,"accessTime":1684721297000,"rights":{"user":"rwx","group":"","other":""},"owner":8119,"group":8119,"longname":"drwx------    2 airmessir 8119           10 Mar 13  2020 G12R03C00"},{"type":"-","name":"AIRLOG_2019_12_20_xlbm4982.txt","size":8805,"modifyTime":1595429739000,"accessTime":1638200800000,"rights":{"user":"rwx","group":"rwx","other":"rx"},"owner":8119,"group":8119,"longname":"-rwxrwxr-x    1 airmessir 8119         8805 Jul 22  2020 AIRLOG_2019_12_20_xlbm4982.txt"},{"type":"-","name":"export_Aoutdata.sql","size":112753423,"modifyTime":1599034460000,"accessTime":1618901801000,"rights":{"user":"rw","group":"r","other":""},"owner":8119,"group":8119,"longname":"-rw-r-----    1 airmessir 8119     112753423 Sep  2  2020 export_Aoutdata.sql"},{"type":"-","name":"Synapse.jks","size":6808,"modifyTime":1602755396000,"accessTime":1618901800000,"rights":{"user":"rwx","group":"rwx","other":"rx"},"owner":8119,"group":8119,"longname":"-rwxrwxr-x    1 airmessir 8119         6808 Oct 15  2020 Synapse.jks"},{"type":"d","name":"EuroInfo","size":92,"modifyTime":1618228007000,"accessTime":1684721297000,"rights":{"user":"rwx","group":"","other":""},"owner":8119,"group":8119,"longname":"drwx------    6 airmessir 8119           92 Apr 12  2021 EuroInfo"},{"type":"-","name":"messir_script.log","size":30352,"modifyTime":1623066841000,"accessTime":1630469422000,"rights":{"user":"rw","group":"r","other":"r"},"owner":8119,"group":8119,"longname":"-rw-r--r--    1 airmessir 8119        30352 Jun  7  2021 messir_script.log"},{"type":"d","name":"Tests","size":89,"modifyTime":1625134108000,"accessTime":1684709899000,"rights":{"user":"rwx","group":"","other":""},"owner":8119,"group":8119,"longname":"drwx------    2 airmessir 8119           89 Jul  1  2021 Tests"},{"type":"-","name":"dump_MESSIR_CONFIG.sql.gz.enc.20210726190001","size":33200650,"modifyTime":1627802264000,"accessTime":1630469420000,"rights":{"user":"rw","group":"r","other":""},"owner":8119,"group":8119,"longname":"-rw-r-----    1 airmessir 8119     33200650 Aug  1  2021 dump_MESSIR_CONFIG.sql.gz.enc.20210726190001"},{"type":"-","name":"dump_MESSIR_LOGS.sql.gz.enc.20211005130644","size":62990874,"modifyTime":1633432504000,"accessTime":1635968680000,"rights":{"user":"rw","group":"","other":""},"owner":8119,"group":8119,"longname":"-rw-------    1 airmessir 8119     62990874 Oct  5  2021 dump_MESSIR_LOGS.sql.gz.enc.20211005130644"},{"type":"-","name":"dump_MESSIR_LOGS.sql.gz.enc.20210309120002","size":232594906,"modifyTime":1633432525000,"accessTime":1635968667000,"rights":{"user":"rw","group":"r","other":""},"owner":8119,"group":8119,"longname":"-rw-r-----    1 airmessir 8119     232594906 Oct  5  2021 dump_MESSIR_LOGS.sql.gz.enc.20210309120002"},{"type":"d","name":"RIE","size":71,"modifyTime":1653664641000,"accessTime":1684721297000,"rights":{"user":"rwx","group":"","other":""},"owner":8119,"group":8119,"longname":"drwx------    5 airmessir 8119           71 May 27  2022 RIE"},{"type":"d","name":"nodejs","size":184,"modifyTime":1655105558000,"accessTime":1684709899000,"rights":{"user":"rwx","group":"","other":""},"owner":8119,"group":8119,"longname":"drwx------    2 airmessir 8119          184 Jun 13  2022 nodejs"},{"type":"d","name":"synapse(salto)","size":34,"modifyTime":1674723330000,"accessTime":1684709899000,"rights":{"user":"rwx","group":"","other":""},"owner":8119,"group":8119,"longname":"drwx------    2 airmessir 8119           34 Jan 26 08:55 synapse(salto)"},{"type":"d","name":"AIRLOGS","size":136,"modifyTime":1681998298000,"accessTime":1684692864000,"rights":{"user":"rwx","group":"","other":""},"owner":8119,"group":8119,"longname":"drwx------    2 airmessir 8119          136 Apr 20 13:44 AIRLOGS"},{"type":"-","name":"AIRLOG_2023_05_03_BLKG4154.txt","size":7914,"modifyTime":1683794657000,"accessTime":1683795020000,"rights":{"user":"rw","group":"r","other":"r"},"owner":8119,"group":8119,"longname":"-rw-r--r--    1 airmessir 8119         7914 May 11 08:44 AIRLOG_2023_05_03_BLKG4154.txt"},{"type":"-","name":"AIRLOG_2023_05_03_dwfq6895.txt","size":134416,"modifyTime":1683794679000,"accessTime":1683795021000,"rights":{"user":"rw","group":"r","other":"r"},"owner":8119,"group":8119,"longname":"-rw-r--r--    1 airmessir 8119       134416 May 11 08:44 AIRLOG_2023_05_03_dwfq6895.txt"},{"type":"-","name":"wasac.jks","size":1680,"modifyTime":1684162541000,"accessTime":1684162565000,"rights":{"user":"rw","group":"","other":""},"owner":8119,"group":8119,"longname":"-rw-------    1 airmessir 8119         1680 May 15 14:55 wasac.jks"}]
+[2023-05-22 09:35:05.353] [info]  looking for update
+[2023-05-22 09:35:05.375] [info]  Express server started on port 3001 main side
+[2023-05-22 09:35:06.202] [info]  app started on port 4200 log
+[2023-05-22 09:35:08.687] [info]  update-available
+[2023-05-22 09:35:14.026] [info]  Connected to SFTP server from apiservice
+[2023-05-22 09:35:16.118] [info]  [{"type":"d","name":".sftp","size":37,"modifyTime":1640350214000,"accessTime":1684721297000,"rights":{"user":"rwx","group":"","other":""},"owner":8119,"group":8119,"longname":"drwx------    2 airmessir 8119           37 Dec 24  2021 .sftp"},{"type":"d","name":"NewMessir","size":4096,"modifyTime":1670228187000,"accessTime":1684721297000,"rights":{"user":"rwx","group":"","other":""},"owner":8119,"group":8119,"longname":"drwx------   27 airmessir 8119         4096 Dec  5 08:16 NewMessir"},{"type":"d","name":"OldMessir","size":29,"modifyTime":1506948349000,"accessTime":1684721297000,"rights":{"user":"rwx","group":"","other":""},"owner":8119,"group":8119,"longname":"drwx------    3 airmessir 8119           29 Oct  2  2017 OldMessir"},{"type":"d","name":"temp","size":8192,"modifyTime":1649842086000,"accessTime":1684709899000,"rights":{"user":"rwx","group":"","other":""},"owner":8119,"group":8119,"longname":"drwx------   11 airmessir 8119         8192 Apr 13  2022 temp"},{"type":"-","name":"AIRLOG_2020_01_16_xlbm4982.txt","size":55553,"modifyTime":1580720907000,"accessTime":1638200799000,"rights":{"user":"rw","group":"r","other":"r"},"owner":8119,"group":8119,"longname":"-rw-r--r--    1 airmessir 8119        55553 Feb  3  2020 AIRLOG_2020_01_16_xlbm4982.txt"},{"type":"-","name":"AIRLOG_2020_01_07_xlbm4982.txt","size":21591,"modifyTime":1580720932000,"accessTime":1638200799000,"rights":{"user":"rw","group":"r","other":"r"},"owner":8119,"group":8119,"longname":"-rw-r--r--    1 airmessir 8119        21591 Feb  3  2020 AIRLOG_2020_01_07_xlbm4982.txt"},{"type":"-","name":"nodejs_logs.log-20200108.gz","size":1121194,"modifyTime":1580745527000,"accessTime":1618901807000,"rights":{"user":"rwx","group":"rwx","other":"rx"},"owner":8119,"group":8119,"longname":"-rwxrwxr-x    1 airmessir 8119      1121194 Feb  3  2020 nodejs_logs.log-20200108.gz"},{"type":"d","name":"G12R03C00","size":10,"modifyTime":1584103264000,"accessTime":1684721297000,"rights":{"user":"rwx","group":"","other":""},"owner":8119,"group":8119,"longname":"drwx------    2 airmessir 8119           10 Mar 13  2020 G12R03C00"},{"type":"-","name":"AIRLOG_2019_12_20_xlbm4982.txt","size":8805,"modifyTime":1595429739000,"accessTime":1638200800000,"rights":{"user":"rwx","group":"rwx","other":"rx"},"owner":8119,"group":8119,"longname":"-rwxrwxr-x    1 airmessir 8119         8805 Jul 22  2020 AIRLOG_2019_12_20_xlbm4982.txt"},{"type":"-","name":"export_Aoutdata.sql","size":112753423,"modifyTime":1599034460000,"accessTime":1618901801000,"rights":{"user":"rw","group":"r","other":""},"owner":8119,"group":8119,"longname":"-rw-r-----    1 airmessir 8119     112753423 Sep  2  2020 export_Aoutdata.sql"},{"type":"-","name":"Synapse.jks","size":6808,"modifyTime":1602755396000,"accessTime":1618901800000,"rights":{"user":"rwx","group":"rwx","other":"rx"},"owner":8119,"group":8119,"longname":"-rwxrwxr-x    1 airmessir 8119         6808 Oct 15  2020 Synapse.jks"},{"type":"d","name":"EuroInfo","size":92,"modifyTime":1618228007000,"accessTime":1684721297000,"rights":{"user":"rwx","group":"","other":""},"owner":8119,"group":8119,"longname":"drwx------    6 airmessir 8119           92 Apr 12  2021 EuroInfo"},{"type":"-","name":"messir_script.log","size":30352,"modifyTime":1623066841000,"accessTime":1630469422000,"rights":{"user":"rw","group":"r","other":"r"},"owner":8119,"group":8119,"longname":"-rw-r--r--    1 airmessir 8119        30352 Jun  7  2021 messir_script.log"},{"type":"d","name":"Tests","size":89,"modifyTime":1625134108000,"accessTime":1684709899000,"rights":{"user":"rwx","group":"","other":""},"owner":8119,"group":8119,"longname":"drwx------    2 airmessir 8119           89 Jul  1  2021 Tests"},{"type":"-","name":"dump_MESSIR_CONFIG.sql.gz.enc.20210726190001","size":33200650,"modifyTime":1627802264000,"accessTime":1630469420000,"rights":{"user":"rw","group":"r","other":""},"owner":8119,"group":8119,"longname":"-rw-r-----    1 airmessir 8119     33200650 Aug  1  2021 dump_MESSIR_CONFIG.sql.gz.enc.20210726190001"},{"type":"-","name":"dump_MESSIR_LOGS.sql.gz.enc.20211005130644","size":62990874,"modifyTime":1633432504000,"accessTime":1635968680000,"rights":{"user":"rw","group":"","other":""},"owner":8119,"group":8119,"longname":"-rw-------    1 airmessir 8119     62990874 Oct  5  2021 dump_MESSIR_LOGS.sql.gz.enc.20211005130644"},{"type":"-","name":"dump_MESSIR_LOGS.sql.gz.enc.20210309120002","size":232594906,"modifyTime":1633432525000,"accessTime":1635968667000,"rights":{"user":"rw","group":"r","other":""},"owner":8119,"group":8119,"longname":"-rw-r-----    1 airmessir 8119     232594906 Oct  5  2021 dump_MESSIR_LOGS.sql.gz.enc.20210309120002"},{"type":"d","name":"RIE","size":71,"modifyTime":1653664641000,"accessTime":1684721297000,"rights":{"user":"rwx","group":"","other":""},"owner":8119,"group":8119,"longname":"drwx------    5 airmessir 8119           71 May 27  2022 RIE"},{"type":"d","name":"nodejs","size":184,"modifyTime":1655105558000,"accessTime":1684709899000,"rights":{"user":"rwx","group":"","other":""},"owner":8119,"group":8119,"longname":"drwx------    2 airmessir 8119          184 Jun 13  2022 nodejs"},{"type":"d","name":"synapse(salto)","size":34,"modifyTime":1674723330000,"accessTime":1684709899000,"rights":{"user":"rwx","group":"","other":""},"owner":8119,"group":8119,"longname":"drwx------    2 airmessir 8119           34 Jan 26 08:55 synapse(salto)"},{"type":"d","name":"AIRLOGS","size":136,"modifyTime":1681998298000,"accessTime":1684692864000,"rights":{"user":"rwx","group":"","other":""},"owner":8119,"group":8119,"longname":"drwx------    2 airmessir 8119          136 Apr 20 13:44 AIRLOGS"},{"type":"-","name":"AIRLOG_2023_05_03_BLKG4154.txt","size":7914,"modifyTime":1683794657000,"accessTime":1683795020000,"rights":{"user":"rw","group":"r","other":"r"},"owner":8119,"group":8119,"longname":"-rw-r--r--    1 airmessir 8119         7914 May 11 08:44 AIRLOG_2023_05_03_BLKG4154.txt"},{"type":"-","name":"AIRLOG_2023_05_03_dwfq6895.txt","size":134416,"modifyTime":1683794679000,"accessTime":1683795021000,"rights":{"user":"rw","group":"r","other":"r"},"owner":8119,"group":8119,"longname":"-rw-r--r--    1 airmessir 8119       134416 May 11 08:44 AIRLOG_2023_05_03_dwfq6895.txt"},{"type":"-","name":"wasac.jks","size":1680,"modifyTime":1684162541000,"accessTime":1684162565000,"rights":{"user":"rw","group":"","other":""},"owner":8119,"group":8119,"longname":"-rw-------    1 airmessir 8119         1680 May 15 14:55 wasac.jks"}]

@@ -1,6 +1,6 @@
 {
   "name": "angular-electron",
-  "version": "13.0.0",
+  "version": "12.0.0",
   "description": "Angular 15 with Electron 22 (Typescript + SASS + Hot Reload)",
   "keywords": [
     "angular",
@@ -48,9 +48,19 @@
     "@angular/platform-browser": "15.1.5",
     "@angular/platform-browser-dynamic": "15.1.5",
     "@angular/router": "15.1.5",
+    "@electron/remote": "2.0.9",
+    "basic-ftp": "5.0.3",
     "electron-log": "4.4.8",
     "electron-updater": "5.3.0",
+    "express": "4.18.2",
+    "file-saver": "2.0.5",
+    "fs": "0.0.1-security",
+    "net": "1.0.2",
+    "ngx-electron": "2.2.0",
     "rxjs": "7.8.0",
+    "ssh2": "1.13.0",
+    "ssh2-sftp-client": "9.1.0",
+    "tls": "0.0.1",
     "tslib": "^2.5.0",
     "winston": "3.8.2",
     "zone.js": "~0.12.0"
@@ -103,13 +113,18 @@
   "browserslist": [
     "chrome 110"
   ],
+  "browser": {
+    "fs": false,
+    "path": false,
+    "os": false
+  },
   "build": {
     "directories": {
       "output": "release/"
     },
     "appId": "demoair",
     "productName": "DemoAir",
-    "buildVersion" : "13.0.0",
+    "buildVersion": "13.0.0",
     "publish": [
       {
         "provider": "github",
