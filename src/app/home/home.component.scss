@@ -1,3 +1,51 @@
 :host {
-  
+
+}
+
+.command-form {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.command-input {
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.execute-button {
+  padding: 10px 20px;
+  margin-left: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.execute-button:hover {
+  background-color: #45a049;
+}
+
+.output-div {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.output-heading {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+.output-content {
+  font-family: monospace;
+  white-space: pre-wrap;
+  overflow-x: auto;
 }

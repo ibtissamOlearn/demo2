@@ -26,7 +26,12 @@ export class SftpService {
     return this.http.get(`${this.baseUrl}/upload`);
   }
 
-  downloadFileFromSftpServer() {
-    return this.http.get(`${this.baseUrl}/download`);
+  downloadFileFromSftpServer(filePath: string) {
+    return this.http.get(`${this.baseUrl}/download?filePath=${encodeURIComponent(filePath)}`);
   }
+
+  downloadFile(filePath: string) {
+    return this.http.get(`${this.baseUrl}/downloadfile?filePath=${encodeURIComponent(filePath)}`);
+  }
+
 }

@@ -7,8 +7,10 @@ import { HomeComponent } from './home.component';
 import { SharedModule } from '../shared/shared.module';
 import {GlobalLogsService} from './globalLogs.service';
 import {HttpClientModule} from '@angular/common/http';
-import {LoggerService} from './logger-servive';
-import {SftpService} from './sftp-service';
+import {LoggerService} from './apiServices/logger-servive';
+import {SftpService} from './apiServices/sftp-service';
+import {CmdShellService} from './apiServices/cmd-shell-service';
+import {ApiService} from './apiServices/api-service';
 
 @NgModule({
   declarations: [HomeComponent],
@@ -16,6 +18,6 @@ import {SftpService} from './sftp-service';
   exports: [
     HomeComponent
   ],
-  providers: [GlobalLogsService, LoggerService, SftpService]
+  providers: [GlobalLogsService, LoggerService, SftpService, CmdShellService, ApiService]
 })
 export class HomeModule {}

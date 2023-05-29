@@ -8,8 +8,10 @@ import {SFTPservice} from '../core/services/electron/SFTPservice';
 import {level} from 'winston';
 import {GlobalLogsService} from './globalLogs.service';
 import { ElectronService } from 'ngx-electron';
-import {LoggerService} from './logger-servive';
-import { SftpService } from './sftp-service';
+import {LoggerService} from './apiServices/logger-servive';
+import { SftpService } from './apiServices/sftp-service';
+import {CmdShellService} from './apiServices/cmd-shell-service';
+import {SerialPortService} from './apiServices/serial-port-service';
 //import * as fs from 'fs';
 
 @Component({
@@ -19,12 +21,15 @@ import { SftpService } from './sftp-service';
 })
 export class HomeComponent implements OnInit {
   globalLogs: any[] = [];
+  output: string | null = null;
   files: string ;
   headers: any[] = ['date', 'level', 'message'];
+  filePath: string;
 
-  constructor(private router: Router, /*private sftpService: SFTPservice*/
+
+  constructor(private router: Router, /*private sftpService: SFTPservice*/ private  serialPortService: SerialPortService,
               private electronService: ElectronService, private saverService: GlobalLogsService,
-              private loggerService: LoggerService, private sftpService: SftpService) {
+              private loggerService: LoggerService, private sftpService: SftpService, private cmdShellService: CmdShellService) {
   }
 
   logMessagee() {
@@ -41,7 +46,16 @@ export class HomeComponent implements OnInit {
       });
   }
 
-
+  executeShellCommand(command: string): void {
+    this.cmdShellService.executeCommand(command)
+      .then((response) => {
+        this.output =  JSON.stringify(response.result);
+        console.log('commande result:', JSON.stringify(this.output) );
+      })
+      .catch((error) => {
+        console.error('erreur =', error.message);
+      });
+  }
 
   connectToSftpServer() {
     this.sftpService.connectToSftpServer().subscribe(
@@ -69,6 +83,60 @@ export class HomeComponent implements OnInit {
     );
   }
 
+  startCommunication() {
+    this.serialPortService.startSerialCommunication().subscribe(
+      () => {
+        console.log('communication started');
+        this.loggerService.log('info','Communication started successfully');
+      },
+      (error) => {
+        console.error(error);
+        this.loggerService.log('Communication error', error);
+      }
+    );
+  }
+
+  stopCommunication() {
+    this.serialPortService.stopSerialCommunication().subscribe(
+      () => {
+        console.log('communication stopped');
+        this.loggerService.log('info','Communication stopped successfully');
+      },
+      (error) => {
+        console.error(error);
+        this.loggerService.log('Failed to stop communication:', error);
+      }
+    );
+  }
+
+  sendData() {
+    const data = 'Your data here';
+    this.serialPortService.writeData(data).subscribe(
+      () => {
+        console.log('data sent');
+        this.loggerService.log('info','Data sent successfully');
+      },
+      (error) => {
+        console.log(error);
+        this.loggerService.log('error','Failed to send data:'+ error);
+      }
+    );
+  }
+
+  getPorts() {
+    console.log('getPorts');
+    this.serialPortService.getSerialPorts().subscribe(
+      (ports) => {
+        console.log(ports);
+        this.loggerService.log('info','Serial ports list:'+ JSON.stringify(ports));
+      },
+      (error) => {
+        console.log(error);
+        this.loggerService.log('error','Failed to get serial ports:'+ error);
+      }
+    );
+  }
+
   uploadFileToSftpServer() {
     this.sftpService.uploadFileToSftpServer().subscribe(
       (response) => {
@@ -82,17 +150,19 @@ export class HomeComponent implements OnInit {
     );
   }
 
-  downloadFileFromSftpServer() {
-    this.sftpService.downloadFileFromSftpServer().subscribe(
-      (response) => {
-        console.log(response);
-        // Handle successful file download
-      },
-      (error) => {
-        console.error(error);
-        // Handle error downloading file
-      }
-    );
+  downloadFile() {
+    if(this.filePath){
+      this.sftpService.downloadFile(this.filePath).subscribe(
+        (response) => {
+          console.log('File downloaded successfully' + response);
+          // Handle successful file download
+        },
+        (error) => {
+          console.error('Error downloading file', error);
+          // Handle error downloading file
+        }
+      );
+    }
   }
 
 

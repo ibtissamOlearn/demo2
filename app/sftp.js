@@ -22,29 +22,6 @@ const connectToSftpServer = async () => {
   }
 };
 
-const connectAndList = async (directory) => {
-  const sftp = new Client();
-  try {
-    await sftp.connect({
-      host: "10.57.135.188",
-      username: "airmessir",
-      password: ")6kUJ9WmEIyT"
-    });
-    logFunction('info', 'Connected to SFTP server from apiservice');
-
-    const files = await sftp.list(directory);
-    console.log('Files:', files);
-
-    return files;
-  } catch (err) {
-    console.error('Error connecting to or listing files from SFTP server:', err.message);
-    logFunction('error', 'Error connecting to or listing files from SFTP server:', err.message);
-
-    throw err;
-  } finally {
-    sftp.end(); // Close the SFTP connection
-  }
-};
 
 const listFiles = async (sftp, directory) => {
   try {
@@ -73,6 +50,16 @@ const uploadFileToSftpServer = async (sftp, localPath, remotePath) => {
   }
 };
 
+const downloadFile = async (sftpConnection, remoteFilePath, localFilePath) => {
+  try {
+    await sftpConnection.get(remoteFilePath, localFilePath);
+    console.log('File downloaded successfully');
+  } catch (err) {
+    console.error('Error downloading file:', err.message);
+    throw err;
+  }
+};
+
 const downloadFileFromSftpServer = async (sftp, remotePath, localPath) => {
   try {
     await sftp.get(remotePath, localPath);
@@ -83,4 +70,6 @@ const downloadFileFromSftpServer = async (sftp, remotePath, localPath) => {
   }
 };
 
-module.exports = { connectToSftpServer, listFiles, uploadFileToSftpServer, downloadFileFromSftpServer };
+
+
+module.exports = { connectToSftpServer, listFiles, uploadFileToSftpServer, downloadFileFromSftpServer , downloadFile};

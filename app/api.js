@@ -1,7 +1,11 @@
 const express = require('express');
 const { logFunction } = require('./loger');
 const sftp = require('./sftp');
+const {executeCommand} = require("./cmdShell");
 const app = express();
+const cors = require('cors');
+
+const serialPort = require('./serialPort');
 
 // handling CORS
 app.use((req, res, next) => {
@@ -11,6 +15,9 @@ app.use((req, res, next) => {
     "Origin, X-Requested-With, Content-Type, Accept");
   next();
 });
+
+app.use(cors());
+
 
 app.use(express.json());
 
@@ -30,15 +37,6 @@ app.get('/connect', async (req, res) => {
 
   } catch (err) {
     res.status(500).send('Error connecting to SFTP server');
-  }
-});
-
-app.get('/connectlist', async (req, res) => {
-  try {
-    const files = await sftp.connectAndList('/');
-    res.json(files);
-  } catch (err) {
-    res.status(500).send('Error connecting to or listing files from SFTP server');
   }
 });
 
@@ -75,6 +73,32 @@ app.get('/download', async (req, res) => {
   }
 });
 
+app.post('/execute-command', async (req, res) => {
+  const { command } = req.body;
+  try {
+    const result = await executeCommand(command);
+    res.send(result);
+  } catch (error) {
+    res.status(500).send(error);
+  }
+});
+
+
+app.post('/start', serialPort.startSerialCommunication);
+app.post('/stop', serialPort.stopSerialCommunication);
+app.post('/write', serialPort.writeData);
+app.get('/list', serialPort.getSerialPorts);
+
+app.get('/downloadfile', async (req, res) => {
+  try {
+    const sftpConnection = await sftp.connectToSftpServer();
+    await sftp.downloadFile(sftpConnection, req.query.filePath, 'Downloads');
+    res.send('File downloaded successfully');
+  } catch (err) {
+    console.error('Error downloading file', err);
+    res.status(500).send('Error downloading file: ' + err.message);
+  }
+});
 
 // Start the Express.js server
 app.listen(3001, () => {
