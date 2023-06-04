@@ -25,11 +25,29 @@ export class HomeComponent implements OnInit {
   files: string ;
   headers: any[] = ['date', 'level', 'message'];
   filePath: string;
+  comPorts: any[];
 
 
   constructor(private router: Router, /*private sftpService: SFTPservice*/ private  serialPortService: SerialPortService,
               private electronService: ElectronService, private saverService: GlobalLogsService,
               private loggerService: LoggerService, private sftpService: SftpService, private cmdShellService: CmdShellService) {
+  }
+
+  ngOnInit() {
+  }
+
+  getCOMPorts() {
+    this.serialPortService.listCOMPorts().subscribe(
+      (ports: any[]) => {
+        this.comPorts = ports;
+        console.log( this.comPorts); // Do whatever you want with the COM ports data
+        this.loggerService.log('info', 'list of Com Port : ' + JSON.stringify(this.comPorts));
+      },
+      error => {
+        console.error('Failed to retrieve COM ports:', error);
+        this.loggerService.log('error', error);
+      }
+    );
   }
 
   logMessagee() {
@@ -49,8 +67,9 @@ export class HomeComponent implements OnInit {
   executeShellCommand(command: string): void {
     this.cmdShellService.executeCommand(command)
       .then((response) => {
-        this.output =  JSON.stringify(response.result);
-        console.log('commande result:', JSON.stringify(this.output) );
+        //this.output =  JSON.stringify(response.result);
+        this.output = response.result.replace(/\\r\\n/g, '\n').replace(/�/g, '');
+        console.log('commande result:', JSON.stringify(this.output.replace(/\\r\\n/g, '\n').replace(/�/g, '')) );
       })
       .catch((error) => {
         console.error('erreur =', error.message);
@@ -82,6 +101,22 @@ export class HomeComponent implements OnInit {
       }
     );
   }
+
+  downloadFile() {
+    if(this.filePath){
+      this.sftpService.downloadFile(this.filePath).subscribe(
+        (response) => {
+          console.log('File downloaded successfully' + response);
+          // Handle successful file download
+        },
+        (error) => {
+          console.error('Error downloading file', error);
+          // Handle error downloading file
+        }
+      );
+    }
+  }
+
 
   startCommunication() {
     this.serialPortService.startSerialCommunication().subscribe(
@@ -150,25 +185,6 @@ export class HomeComponent implements OnInit {
     );
   }
 
-  downloadFile() {
-    if(this.filePath){
-      this.sftpService.downloadFile(this.filePath).subscribe(
-        (response) => {
-          console.log('File downloaded successfully' + response);
-          // Handle successful file download
-        },
-        (error) => {
-          console.error('Error downloading file', error);
-          // Handle error downloading file
-        }
-      );
-    }
-  }
-
-
-  ngOnInit(): void {
-  }
-
   generateLog() {
     this.saverService.addLog(new Date().toString(), 'info', 'add log message2');
   }
@@ -205,19 +221,5 @@ export class HomeComponent implements OnInit {
       console.log('cannot send log msg from angular to electron app');
     }
   }*/
-
-  public logMessage(): void {
-    const message  = 'This is a log message from Angular.';
-    console.log(message);
-
-    if (this.electronService.isElectronApp) {
-      console.log('inside isElectron');
-      this.electronService.ipcRenderer.sendSync('log-message', message);
-      const logMessage = new Date().toISOString() + ': ' + message + '\n';
-      console.log(logMessage);
-    }else {
-      console.log('cannot send log msg from angular to electron app');
-    }
-  }
 
 }

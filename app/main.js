@@ -7,7 +7,7 @@ const path = require("path");
 const fs = require("fs");
 ////////////////////////////////////////////////////
 const express = require('express');
-const { logFunction } = require('./loger');
+const { logFunction } = require('./services/loger');
 const app_express = express();
 const backendApp = express();
 backendApp.use(express.static(path.join(__dirname, 'backend')));

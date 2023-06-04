@@ -2,6 +2,9 @@
 
 const Client = require('ssh2-sftp-client');
 const { logFunction } = require('./loger');
+const fs = require('fs');
+const path = require('path');
+
 
 const connectToSftpServer = async () => {
   const sftp = new Client();
@@ -51,8 +54,10 @@ const uploadFileToSftpServer = async (sftp, localPath, remotePath) => {
 };
 
 const downloadFile = async (sftpConnection, remoteFilePath, localFilePath) => {
+  const remoteFileName = path.basename(remoteFilePath);
+  const localFullPath = path.join(localFilePath, remoteFileName);
   try {
-    await sftpConnection.get(remoteFilePath, localFilePath);
+    await sftpConnection.get(remoteFilePath, fs.createWriteStream(localFullPath));
     console.log('File downloaded successfully');
   } catch (err) {
     console.error('Error downloading file:', err.message);

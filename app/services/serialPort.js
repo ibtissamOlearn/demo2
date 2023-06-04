@@ -7,6 +7,7 @@ const serialPort = new SerialPort({
   path: 'COM1',
   baudRate: 9600
 });
+
 const startSerialCommunication = (req, res) => {
   serialPort.open((error) => {
     if (error) {

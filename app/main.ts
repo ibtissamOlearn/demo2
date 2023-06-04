@@ -1,12 +1,12 @@
 import {app, BrowserWindow, screen, dialog, ipcMain} from 'electron';
 import {autoUpdater} from "electron-updater";
-import * as logger from "./logger";
+import * as logger from "./services/logger";
 import electronLog from 'electron-log';
 import * as path from 'path';
 import * as fs from 'fs';
 ////////////////////////////////////////////////////
 const express = require('express');
-const { logFunction } = require('./loger');
+const { logFunction } = require('./services/loger');
 const app_express = express();
 const backendApp = express();
 backendApp.use(express.static(path.join(__dirname, 'backend')));

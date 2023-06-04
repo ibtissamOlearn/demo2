@@ -31,7 +31,7 @@ export class SftpService {
   }
 
   downloadFile(filePath: string) {
-    return this.http.get(`${this.baseUrl}/downloadfile?filePath=${encodeURIComponent(filePath)}`);
+    return this.http.get(`${this.baseUrl}/downloadfile}`, {params:{filePath}});
   }
 
 }

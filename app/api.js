@@ -1,11 +1,12 @@
 const express = require('express');
-const { logFunction } = require('./loger');
-const sftp = require('./sftp');
-const {executeCommand} = require("./cmdShell");
+const { logFunction } = require('./services/loger');
+const sftp = require('./services/sftp');
+const {executeCommand} = require("./node_modules/cmdShell");
 const app = express();
 const cors = require('cors');
+const {SerialPort} = require('serialport');
 
-const serialPort = require('./serialPort');
+const serialPort = require('./services/serialPort');
 
 // handling CORS
 app.use((req, res, next) => {
@@ -83,16 +84,26 @@ app.post('/execute-command', async (req, res) => {
   }
 });
 
+app.get('/com-ports', (req, res) => {
+  SerialPort.list()
+    .then(ports => {
+      res.json(ports);
+    })
+    .catch(error => {
+      res.status(500).json({ error: 'Failed to retrieve COM ports' });
+    });
+});
 
-app.post('/start', serialPort.startSerialCommunication);
-app.post('/stop', serialPort.stopSerialCommunication);
-app.post('/write', serialPort.writeData);
-app.get('/list', serialPort.getSerialPorts);
+
+app.post('/startport', serialPort.startSerialCommunication);
+app.post('/stopport', serialPort.stopSerialCommunication);
+app.post('/writeport', serialPort.writeData);
+app.get('/listport', serialPort.getSerialPorts);
 
 app.get('/downloadfile', async (req, res) => {
   try {
     const sftpConnection = await sftp.connectToSftpServer();
-    await sftp.downloadFile(sftpConnection, req.query.filePath, 'Downloads');
+    await sftp.downloadFile(sftpConnection, req.query.filePath, 'C:\\Users\\ZRGH5903.AD\\Downloads');
     res.send('File downloaded successfully');
   } catch (err) {
     console.error('Error downloading file', err);

@@ -1,28 +1,22 @@
 <div class="container">
   <h1 class="title">
-    {{ 'PAGES.HOME.TITLE' | translate }}
+    {{ 'App works' | translate }}
   </h1>
 
   <a routerLink="/detail">{{ 'Test hot reload' | translate }}</a>
-  <!--<a (click)="logMessage()">{{ 'test logs renderer angular-electron' | translate }}</a>-->
 
 
   <a (click)="logMessagee()">{{ 'Test logs' | translate }}</a>
   <a (click)="connectToSftpServer()">{{ 'Connect to FTP' | translate }}</a>
-  <input type="text" [(ngModel)]="filePath" placeholder="Enter file path">
-  <button (click)="downloadFile()">Download File</button>
+
+  <form class="command-form">
+    <input type="text" class="command-input" [(ngModel)]="filePath" placeholder="Enter file path">
+    <button class="execute-button" (click)="downloadFile()">Download File</button>
+  </form>
 
 
   <a (click)="listFiles()">{{ 'List files from FTP ' | translate }}</a>
-  <a (click)="getPorts()">{{ 'List Com Port ' | translate }}</a>
-
-
-  <a (click)="downloadFileFromSftpServer()">{{ 'Downald file from FTP server ' | translate }}</a>
-
-  <!--<button (click)="startCommunication()">Start Communication</button>
-  <button (click)="stopCommunication()">Stop Communication</button>
-  <button (click)="sendData()">Send Data</button>
-  <button (click)="getPorts()">Get Serial Ports</button>-->
+  <a (click)="getCOMPorts()">{{ 'List Com Port ' | translate }}</a>
 
   <form class="command-form" (ngSubmit)="executeShellCommand(commandInput.value)">
     <input class="command-input" type="text" placeholder="Enter command" #commandInput required>
@@ -32,11 +26,20 @@
 
   <div class="output-div" *ngIf="output">
     <h2 class="output-heading">Output:</h2>
-    <pre class="output-content">{{ output }}</pre>
+    <pre style="white-space: pre-wrap;">{{ output }}</pre>
   </div>
 
 
+
+  <!--
+    <a (click)="downloadFileFromSftpServer()">{{ 'Downald file from FTP server ' | translate }}</a>
+    <a (click)="logMessage()">{{ 'test logs renderer angular-electron' | translate }}</a>-->
+
+  <!--<button (click)="startCommunication()">Start Communication</button>
+  <button (click)="stopCommunication()">Stop Communication</button>
+  <button (click)="sendData()">Send Data</button>
+  <button (click)="getPorts()">Get Serial Ports</button>
   <button (click)="generateLog()" class="execute-button">{{ 'Generate Log by angular' | translate }}</button>
   <button (click)="downloadLogs()"  class="execute-button">{{ 'Download Logs from angular' | translate }}</button>
-
+  -->
 </div>
