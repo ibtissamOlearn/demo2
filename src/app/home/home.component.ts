@@ -68,8 +68,10 @@ export class HomeComponent implements OnInit {
     this.cmdShellService.executeCommand(command)
       .then((response) => {
         //this.output =  JSON.stringify(response.result);
-        this.output = response.result.replace(/\\r\\n/g, '\n').replace(/�/g, '');
-        console.log('commande result:', JSON.stringify(this.output.replace(/\\r\\n/g, '\n').replace(/�/g, '')) );
+        //this.output = response.result.replace(/\\r\\n/g, '\n').replace(/�/g, '');
+        this.output = response.result;
+        //console.log('commande result:', JSON.stringify(this.output.replace(/\\r\\n/g, '\n').replace(/�/g, '')) );
+        console.log('commande result:', JSON.stringify(this.output));
       })
       .catch((error) => {
         console.error('erreur =', error.message);

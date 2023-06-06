@@ -1,12 +1,12 @@
 const express = require('express');
 const { logFunction } = require('./services/loger');
 const sftp = require('./services/sftp');
-const {executeCommand} = require("./node_modules/cmdShell");
+const {executeCommand} = require('./services/cmdShell');
 const app = express();
 const cors = require('cors');
-const {SerialPort} = require('serialport');
+//const {SerialPort} = require('serialport');
 
-const serialPort = require('./services/serialPort');
+//const serialPort = require('./services/serialPort');
 
 // handling CORS
 app.use((req, res, next) => {
@@ -83,7 +83,7 @@ app.post('/execute-command', async (req, res) => {
     res.status(500).send(error);
   }
 });
-
+/*
 app.get('/com-ports', (req, res) => {
   SerialPort.list()
     .then(ports => {
@@ -98,7 +98,7 @@ app.get('/com-ports', (req, res) => {
 app.post('/startport', serialPort.startSerialCommunication);
 app.post('/stopport', serialPort.stopSerialCommunication);
 app.post('/writeport', serialPort.writeData);
-app.get('/listport', serialPort.getSerialPorts);
+app.get('/listport', serialPort.getSerialPorts);*/
 
 app.get('/downloadfile', async (req, res) => {
   try {
